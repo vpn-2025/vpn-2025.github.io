@@ -1,4 +1,4 @@
-# 2025年免费VPN推荐 | 5月26日18.1M/S|免费V2ray/SSR/Shadowrocket/Clash订阅节点地址  更新时间 2025-05-26 10:23:15
+# 2025年免费VPN推荐 | 6月4日18.6M/S|免费Shadowrocket/Clash/SSR/V2ray订阅节点地址  更新时间 2025-06-04 09:34:40
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpn-2025.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpn-2025.github.io/uploads/2025/05/0-20250526.yaml
-- https://vpn-2025.github.io/uploads/2025/05/1-20250526.yaml
-- https://vpn-2025.github.io/uploads/2025/05/2-20250526.yaml
-- https://vpn-2025.github.io/uploads/2025/05/3-20250526.yaml
-- https://vpn-2025.github.io/uploads/2025/05/4-20250526.yaml
+- https://vpn-2025.github.io/uploads/2025/06/0-20250604.yaml
+- https://vpn-2025.github.io/uploads/2025/06/1-20250604.yaml
+- https://vpn-2025.github.io/uploads/2025/06/2-20250604.yaml
+- https://vpn-2025.github.io/uploads/2025/06/3-20250604.yaml
+- https://vpn-2025.github.io/uploads/2025/06/4-20250604.yaml
 
 ### V2ray订阅链接
 
-- https://vpn-2025.github.io/uploads/2025/05/0-20250526.txt
-- https://vpn-2025.github.io/uploads/2025/05/1-20250526.txt
-- https://vpn-2025.github.io/uploads/2025/05/2-20250526.txt
-- https://vpn-2025.github.io/uploads/2025/05/3-20250526.txt
-- https://vpn-2025.github.io/uploads/2025/05/4-20250526.txt
+- https://vpn-2025.github.io/uploads/2025/06/0-20250604.txt
+- https://vpn-2025.github.io/uploads/2025/06/1-20250604.txt
+- https://vpn-2025.github.io/uploads/2025/06/2-20250604.txt
+- https://vpn-2025.github.io/uploads/2025/06/3-20250604.txt
+- https://vpn-2025.github.io/uploads/2025/06/4-20250604.txt
 
 ### Sing-box订阅链接
 
-- https://vpn-2025.github.io/uploads/2025/05/20250526.json
+- https://vpn-2025.github.io/uploads/2025/06/20250604.json
 
 ## 更多clash节点订阅 ：
 
