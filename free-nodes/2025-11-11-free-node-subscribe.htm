@@ -289,9 +289,9 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 的 XTLS 模式如何提升性能？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 可以兼容旧版 Hiddify 吗？</h5></div>
     <div class="panel-body">
-        VLESS + XTLS 模式可以在加密传输中减少 TLS 握手和数据复制过程，从而显著降低延迟并减少 CPU 占用。这种优化特别适合高带宽或高并发的场景。<hr />    </div>
+        Hiddify Next 完全向下兼容旧版配置，用户可直接导入原有 JSON 或 YAML 文件。系统会自动检测格式并进行迁移，非常适合升级旧环境到新版客户端。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 如何兼容 Clash 的配置文件？</h5></div>
@@ -299,9 +299,9 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
         Sing-box 支持 Clash 规则格式的解析，用户可直接导入 Clash 的 YAML 配置文件进行使用。虽然部分高级参数需要调整，但大多数分流和策略配置都能自动识别，便于迁移。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 可以兼容旧版 Hiddify 吗？</h5></div>
+    <div class="panel-heading"><h5>Trojan TLS 伪装域名如何提高抗封锁能力？</h5></div>
     <div class="panel-body">
-        Hiddify Next 完全向下兼容旧版配置，用户可直接导入原有 JSON 或 YAML 文件。系统会自动检测格式并进行迁移，非常适合升级旧环境到新版客户端。<hr />    </div>
+        通过选择真实可访问域名并使用有效证书，Trojan 流量可以完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 是否可以与 Shadowsocks 客户端共存？</h5></div>
@@ -314,14 +314,14 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
         支持。Surfboard 可通过策略组和规则文件将不同应用的流量分配到指定节点，保证游戏、视频和浏览器流量走最优节点，提高访问速度和网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
-    <div class="panel-body">
-        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 支持哪些协议？</h5></div>
     <div class="panel-body">
         Clash 支持多种主流代理协议，包括 VMess、VLess、Trojan、Shadowsocks、Snell、Socks5 等。通过配置文件或订阅源，用户可以灵活组合不同协议的节点，实现复杂的分流策略与优先级控制。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅失败如何处理？</h5></div>
+    <div class="panel-body">
+        首先确认订阅 URL 是否有效，并确保网络连接正常。可手动刷新或重新添加订阅链接，保证节点列表最新。结合策略组使用，确保稳定科学上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 能否自动更新订阅？</h5></div>
@@ -329,14 +329,14 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
         支持。Shadowrocket 可以设置定时更新周期，例如每隔 12 小时或每天自动刷新订阅链接，确保节点列表保持最新状态。这样无需手动更新即可长期稳定使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan TLS 伪装域名如何提高抗封锁能力？</h5></div>
+    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
     <div class="panel-body">
-        通过选择真实可访问域名并使用有效证书，Trojan 流量可以完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
+        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅失败如何处理？</h5></div>
+    <div class="panel-heading"><h5>VLESS 的 XTLS 模式如何提升性能？</h5></div>
     <div class="panel-body">
-        首先确认订阅 URL 是否有效，并确保网络连接正常。可手动刷新或重新添加订阅链接，保证节点列表最新。结合策略组使用，确保稳定科学上网体验。    </div>
+        VLESS + XTLS 模式可以在加密传输中减少 TLS 握手和数据复制过程，从而显著降低延迟并减少 CPU 占用。这种优化特别适合高带宽或高并发的场景。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -365,15 +365,15 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-24-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月24日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月24日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-node-subscribe.htm" title="2025年免费VPN推荐 | 10月21日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月21日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-3-mianfei-vpn.htm" title="2025年免费VPN推荐 | 11月3日22.1M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 11月3日22.1M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-11-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月11日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月11日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-9-vpn-github.htm" title="2025年免费VPN推荐 | 11月9日18.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 11月9日18.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-5-vpn-github.htm" title="2025年免费VPN推荐 | 10月5日20.6M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 10月5日20.6M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-4-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月4日18.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月4日18.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-vpn-proxy.htm" title="2025年免费VPN推荐 | 10月26日20.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月26日20.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-vpn-node.htm" title="2025年免费VPN推荐 | 10月20日23M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月20日23M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-14-top-vpn-node.htm" title="2025年免费VPN推荐 | 11月14日20.3M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 11月14日20.3M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-7-free-vpn.htm" title="2025年免费VPN推荐 | 10月7日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月7日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-node-share.htm" title="2025年免费VPN推荐 | 10月22日22.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月22日22.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-13-free-node-subscribe-links.htm" title="2025年免费VPN推荐 | 11月13日18M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 11月13日18M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-19-free-vpn.htm" title="2025年免费VPN推荐 | 10月19日21M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月19日21M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-24-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月24日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月24日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-vpn-proxy.htm" title="2025年免费VPN推荐 | 10月15日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 10月15日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-19-mianfei-vpn.htm" title="2025年免费VPN推荐 | 11月19日18.1M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 11月19日18.1M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点地址</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-17-free-node-subscribe.htm" title="2025年免费VPN推荐 | 10月17日22M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月17日22M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
                     </ul>
     </div>
@@ -386,7 +386,7 @@ A4：强烈不推荐。免费VPN往往存在数据泄露风险、广告注入、
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
