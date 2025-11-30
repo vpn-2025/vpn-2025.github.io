@@ -238,17 +238,23 @@ vi /etc/v2ray/config.json
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2025-11-20-vpn-free.htm">2025年免费VPN推荐 | 11月20日21.4M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点地址</a></p>
+        <p>下一个：<a href="/free-nodes/2025-11-22-vpn-github.htm">2025年免费VPN推荐 | 11月22日20.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点地址</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化访问速度？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 的节点管理支持批量操作吗？</h5></div>
     <div class="panel-body">
-        WinXray 会定期测速节点延迟和丢包率，结合策略组自动切换到最佳节点。保证网页、视频和游戏流量走低延迟节点，提升访问速度和连接稳定性。<hr />    </div>
+        Mihomo 支持批量导入、删除和更新节点。通过策略组和分类管理，用户可以高效地管理数百个节点，同时进行测速和节点切换，提高操作效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 如何结合 Xray 内核实现多协议支持？</h5></div>
+    <div class="panel-heading"><h5>在 Clash 中使用混合代理模式有什么好处？</h5></div>
     <div class="panel-body">
-        Matsuri 可加载 Xray 核心，通过配置多 inbound/outbound 模块实现 VMess、VLess、Trojan 等协议共存。用户可在单一服务端配置文件中同时支持多客户端访问，便于统一管理。<hr />    </div>
+        Clash 的混合代理模式允许同时运行多个代理协议和端口监听，从而实现流量分流。它可以为不同的应用或域名设置不同的代理方式，提高灵活性与连接稳定性，非常适合多协议用户使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 支持哪些协议？</h5></div>
+    <div class="panel-body">
+        Clash 支持多种主流代理协议，包括 VMess、VLess、Trojan、Shadowsocks、Snell、Socks5 等。通过配置文件或订阅源，用户可以灵活组合不同协议的节点，实现复杂的分流策略与优先级控制。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Vmess 的安全加密方式推荐使用哪种？</h5></div>
@@ -256,9 +262,9 @@ vi /etc/v2ray/config.json
         目前推荐使用 auto 或 none（结合 TLS 加密）以提升性能。旧版 AEAD 加密已被废弃，使用 TLS/XTLS 层提供的加密即可确保安全。过度加密反而增加 CPU 占用与延迟。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 的节点管理支持批量操作吗？</h5></div>
+    <div class="panel-heading"><h5>WinXray 节点延迟检测如何优化访问速度？</h5></div>
     <div class="panel-body">
-        Mihomo 支持批量导入、删除和更新节点。通过策略组和分类管理，用户可以高效地管理数百个节点，同时进行测速和节点切换，提高操作效率。<hr />    </div>
+        WinXray 会定期测速节点延迟和丢包率，结合策略组自动切换到最佳节点。保证网页、视频和游戏流量走低延迟节点，提升访问速度和连接稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 与 Nekobox 有什么区别？</h5></div>
@@ -266,9 +272,9 @@ vi /etc/v2ray/config.json
         Nekoray 是基于 sing-box 的多平台代理客户端，支持 Windows、Linux 等系统；而 Nekobox 则是为 Android 设计的移动版本。两者共享相同的核心逻辑，均支持 VMess、VLess、Trojan 等协议，适合跨设备同步使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 支持哪些协议？</h5></div>
+    <div class="panel-heading"><h5>Netch 的规则代理与全局代理如何选择？</h5></div>
     <div class="panel-body">
-        Clash 支持多种主流代理协议，包括 VMess、VLess、Trojan、Shadowsocks、Snell、Socks5 等。通过配置文件或订阅源，用户可以灵活组合不同协议的节点，实现复杂的分流策略与优先级控制。<hr />    </div>
+        全局代理会将所有流量通过节点转发，而规则代理只针对指定 IP、端口或应用。用户可根据需求选择，以优化带宽利用和流量分流，确保不同应用的最佳体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 是否支持 Clash 配置？</h5></div>
@@ -281,14 +287,9 @@ vi /etc/v2ray/config.json
         支持用户分组管理，可为不同组设置独立带宽、流量配额和节点访问权限。分组管理便于大规模用户维护，确保每个组的网络资源合理分配，提升整体管理效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>在 Clash 中使用混合代理模式有什么好处？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 如何结合 Xray 内核实现多协议支持？</h5></div>
     <div class="panel-body">
-        Clash 的混合代理模式允许同时运行多个代理协议和端口监听，从而实现流量分流。它可以为不同的应用或域名设置不同的代理方式，提高灵活性与连接稳定性，非常适合多协议用户使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的规则代理与全局代理如何选择？</h5></div>
-    <div class="panel-body">
-        全局代理会将所有流量通过节点转发，而规则代理只针对指定 IP、端口或应用。用户可根据需求选择，以优化带宽利用和流量分流，确保不同应用的最佳体验。    </div>
+        Matsuri 可加载 Xray 核心，通过配置多 inbound/outbound 模块实现 VMess、VLess、Trojan 等协议共存。用户可在单一服务端配置文件中同时支持多客户端访问，便于统一管理。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -317,16 +318,16 @@ vi /etc/v2ray/config.json
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-21-node-share-links.htm" title="2025年免费VPN推荐 | 11月21日20.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 11月21日20.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-16-top-vpn-node.htm" title="2025年免费VPN推荐 | 10月16日18.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月16日18.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-vpn-proxy.htm" title="2025年免费VPN推荐 | 10月26日20.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月26日20.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-8-vpn-proxy.htm" title="2025年免费VPN推荐 | 10月8日22.9M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 10月8日22.9M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-4-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月4日18.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月4日18.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-11-free-node-subscribe.htm" title="2025年免费VPN推荐 | 11月11日22.7M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 11月11日22.7M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-4-vpn-free.htm" title="2025年免费VPN推荐 | 11月4日22.4M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 11月4日22.4M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-11-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月11日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月11日21.8M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-25-vpn-github.htm" title="2025年免费VPN推荐 | 10月25日20.4M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月25日20.4M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-19-mianfei-vpn.htm" title="2025年免费VPN推荐 | 11月19日18.1M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 11月19日18.1M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-node-subscribe.htm" title="2025年免费VPN推荐 | 10月21日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月21日22.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-node-share.htm" title="2025年免费VPN推荐 | 10月22日22.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月22日22.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-16-top-vpn-node.htm" title="2025年免费VPN推荐 | 10月16日18.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月16日18.8M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-22-vpn-github.htm" title="2025年免费VPN推荐 | 11月22日20.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 11月22日20.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-vpn-proxy.htm" title="2025年免费VPN推荐 | 11月1日21.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 11月1日21.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-28-free-vpn.htm" title="2025年免费VPN推荐 | 11月28日22M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 11月28日22M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-vpn-proxy.htm" title="2025年免费VPN推荐 | 10月15日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 10月15日21.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-19-free-vpn.htm" title="2025年免费VPN推荐 | 10月19日21M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月19日21M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-7-free-vpn.htm" title="2025年免费VPN推荐 | 10月7日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月7日20.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点地址</a></li>
                     </ul>
     </div>
 </div>
@@ -338,7 +339,7 @@ vi /etc/v2ray/config.json
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
