@@ -137,24 +137,14 @@
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 macOS 上运行 ClashX？</h5></div>
+    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
     <div class="panel-body">
-        ClashX 是 macOS 平台专用客户端，用户可在 GitHub 下载 DMG 安装包。安装后导入订阅即可使用，支持系统代理集成、自动更新和延迟测试。界面简洁直观，深受苹果用户欢迎。<hr />    </div>
+        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何设置用户带宽与流量配额？</h5></div>
+    <div class="panel-heading"><h5>VMess 连接不稳定的常见原因有哪些？</h5></div>
     <div class="panel-body">
-        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 在丢包环境下如何配置更稳？</h5></div>
-    <div class="panel-body">
-        可调整 Hysteria2 的拥塞控制与重传参数，启用 FEC（前向纠错）并合理设置 MTU 与窗口大小以适应链路特性。还可尝试切换 QUIC 参数或更换中转以减少丢包影响。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 配置 TLS+WebSocket 有哪些性能优势？</h5></div>
-    <div class="panel-body">
-        TLS+WebSocket 可伪装 HTTPS 流量，增强抗封锁能力，同时降低被封检测风险。结合策略组和节点延迟检测，可保证访问速度和连接稳定性，适合视频和游戏场景。<hr />    </div>
+        VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 是什么软件？</h5></div>
@@ -167,24 +157,34 @@
         TLS+WebSocket 可伪装 HTTPS 流量，增强抗封锁能力，同时降低被检测风险。结合策略组和节点延迟检测，可保证访问速度和连接稳定性，特别适合视频和游戏场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 如何结合策略组实现多节点优化？</h5></div>
-    <div class="panel-body">
-        Netch 可按应用和协议设置策略组，将流量分配到最优节点。结合节点延迟检测和自动切换功能，可提高网页浏览、视频播放和游戏访问速度及稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何将 Windows 上的 V2Ray 与 WSL 环境联合调试？</h5></div>
-    <div class="panel-body">
-        在 WSL 内运行需要的调试工具并通过 localhost 或将 V2Ray 监听地址绑定为 0.0.0.0，然后在 Windows 与 WSL 之间配置端口映射。注意 Windows 防火墙规则需允许 WSL 与 Windows 进程通信。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的 PAC 模式如何应用？</h5></div>
     <div class="panel-body">
         PAC 模式根据规则自动判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站环境，提高网络访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 连接不稳定的常见原因有哪些？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 在丢包环境下如何配置更稳？</h5></div>
     <div class="panel-body">
-        VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。    </div>
+        可调整 Hysteria2 的拥塞控制与重传参数，启用 FEC（前向纠错）并合理设置 MTU 与窗口大小以适应链路特性。还可尝试切换 QUIC 参数或更换中转以减少丢包影响。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何设置用户带宽与流量配额？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户单独设置带宽和流量上限。超出限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提高整体网络公平性和效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 如何结合策略组实现多节点优化？</h5></div>
+    <div class="panel-body">
+        Netch 可按应用和协议设置策略组，将流量分配到最优节点。结合节点延迟检测和自动切换功能，可提高网页浏览、视频播放和游戏访问速度及稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 配置 TLS+WebSocket 有哪些性能优势？</h5></div>
+    <div class="panel-body">
+        TLS+WebSocket 可伪装 HTTPS 流量，增强抗封锁能力，同时降低被封检测风险。结合策略组和节点延迟检测，可保证访问速度和连接稳定性，适合视频和游戏场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 macOS 上运行 ClashX？</h5></div>
+    <div class="panel-body">
+        ClashX 是 macOS 平台专用客户端，用户可在 GitHub 下载 DMG 安装包。安装后导入订阅即可使用，支持系统代理集成、自动更新和延迟测试。界面简洁直观，深受苹果用户欢迎。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -232,16 +232,16 @@
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-10-10-vpn-node.htm" title="2025年免费VPN推荐 | 10月10日21.1M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月10日21.1M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-11-3.htm" title="2025年免费VPN推荐 | 11月3日19.3M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 11月3日19.3M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点地址</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-31.htm" title="2025年免费VPN推荐 | 10月31日22M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 10月31日22M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-24-node-share.htm" title="2025年免费VPN推荐 | 10月24日22M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月24日22M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-14-free-vpn-node.htm" title="2025年免费VPN推荐 | 10月14日20.7M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 10月14日20.7M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-16-vpn-node.htm" title="2025年免费VPN推荐 | 10月16日18.6M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月16日18.6M/S|免费Clash节点/SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-10-vpn-node.htm" title="2025年免费VPN推荐 | 10月10日21.1M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点地址">2025年免费VPN推荐 | 10月10日21.1M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-10-free-node-subscribe.htm" title="2026年免费VPN推荐 | 11月10日18.6M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点订阅节点地址">2026年免费VPN推荐 | 11月10日18.6M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-16-top-vpn-node.htm" title="2026年免费VPN推荐 | 11月16日18.4M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点地址">2026年免费VPN推荐 | 11月16日18.4M/S|免费Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点地址</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-vpn-2026-11-5.htm" title="2025年免费VPN推荐 | 11月5日19M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点地址">2025年免费VPN推荐 | 11月5日19M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Clash节点/Singbox节点/Trojan节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-17.htm" title="2025年免费VPN推荐 | 10月17日20.9M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 10月17日20.9M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅节点地址</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-28-vpn-free.htm" title="2025年免费VPN推荐 | 10月28日22.2M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点地址">2025年免费VPN推荐 | 10月28日22.2M/S|免费Clash节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-22-free-node-subscribe.htm" title="2025年免费VPN推荐 | 10月22日23M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点订阅节点地址">2025年免费VPN推荐 | 10月22日23M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点订阅节点地址</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-20-vpn-free.htm" title="2025年免费VPN推荐 | 10月20日19.6M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点地址">2025年免费VPN推荐 | 10月20日19.6M/S|免费SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-8-node-share.htm" title="2026年免费VPN推荐 | 11月8日19.9M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址">2026年免费VPN推荐 | 11月8日19.9M/S|免费Trojan节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-11-13.htm" title="2026年免费VPN推荐 | 11月13日20.5M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点地址">2026年免费VPN推荐 | 11月13日20.5M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点订阅节点地址</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-10-23.htm" title="2025年免费VPN推荐 | 10月23日22.1M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点地址">2025年免费VPN推荐 | 10月23日22.1M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点地址</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -253,7 +253,7 @@
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">21</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
